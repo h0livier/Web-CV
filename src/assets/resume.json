@@ -1,0 +1,25 @@
+{
+    "full_name": "Olivier Hayot",
+    "mail": "olivier.hayot.dev@gmail.com",
+    "phone": "+32 471 64 60 15",
+    "accounts": [
+        {
+            "name": "github",
+            "link": "https://github.com/h0livier",
+            "icon": "fa fa-github"
+        },
+        {
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/olivier-hayot-614b5a195",
+            "icon": "fa fa-linkedin"
+        }
+    ],
+    "title_values": ["Olivier Hayot", "Software Developer", "Devops"],
+    "skills": [
+        {"icon":"fa fa-github", "label": "oui"},
+        {"icon":"fa fa-github", "label": "oui"},
+        {"icon":"fa fa-github", "label": "oui"},
+        {"icon":"fa fa-github", "label": "oui"},
+        {"icon":"fa fa-github", "label": "oui"}
+    ]
+}
