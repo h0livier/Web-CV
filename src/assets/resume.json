@@ -14,7 +14,7 @@
             "icon": "fa fa-linkedin"
         }
     ],
-    "title_values": ["Olivier Hayot", "Software Developer", "Devops"],
+    "title_values": ["Olivier Hayot", "a Software Developer", "a DevOps"],
     "skills": [
         {"icon":"fa fa-github", "label": "oui"},
         {"icon":"fa fa-github", "label": "oui"},

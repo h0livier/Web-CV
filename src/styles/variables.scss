@@ -1,0 +1,68 @@
+$body-bg: #262626;
+
+:root{
+    --primary: #255C99;
+}
+
+$theme-colors: (
+    "primary":  #255C99,
+    "secondary":#080,
+    "success":  #255C99,
+    "info":     #255C99,
+    "warning":  #255C99,
+    "danger":   #255C99,
+    "light":    #E0E2DB,
+    "dark":     #161616,
+    "stack":    #3D3D3D,
+    "navigation" : #303030
+);
+
+$utilities: (
+    "width": (
+        property: width,
+        class: w,
+        values: (
+            25: 25%,
+            50: 50%,
+            75: 75%,
+            100: 100%,
+            auto: auto
+        )
+    ),
+    "padding": (
+        property: padding,
+        class: p,
+        values:(
+            1: 1%,
+            2: 2%,
+            3: 3%,
+            4: 4%,
+            5: 5%,
+            6: 6%,
+            7: 7%,
+            8: 8%,
+            9: 9%,
+            10: 10%,
+        )
+    ),
+    "margin": (
+        property: margin,
+        class: m,
+        values:(
+            1: 1%,
+            2: 2%,
+            3: 3%,
+            4: 4%,
+            5: 5%,
+            6: 6%,
+            7: 7%,
+            8: 8%,
+            9: 9%,
+            10: 10%,
+        )
+    )
+);
+
+
+// Bootstrap and its default variables
+@import "node_modules/bootstrap/scss/bootstrap";
