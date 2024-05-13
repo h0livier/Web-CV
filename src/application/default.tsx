@@ -1,13 +1,14 @@
 import { Col, Container, Row, Stack } from 'react-bootstrap'
 import { PresentationStack } from '@components/presentation'
-import { SkillsStack } from '@components/skills'
+import Navigation from "@components/navigation/navigation.tsx";
 
 export default function Default(){
     return(
-        <Container fluid className='text-light' id='main-container'>
+        <Container fluid id='main-container'>
             <Row>
                 <Col>
-                    <Stack className='py-5 rounded'>
+                    <Stack>
+                        <Navigation />
                         <PresentationStack />
                     </Stack>
                 </Col>

@@ -1,31 +1,26 @@
-import { Stack, Figure, Button, Col } from "react-bootstrap";
-import ResumeValues from '@assets/resume.json'
-import logo from '@assets/react.svg'
- 
+import {useState} from "react";
+
 export default function Navigation(){
 
-    return(
-        <Col className="p-2 w-25">
-            <Stack className="d-flex justify-content-center align-items-center">
-                <Figure className="p-3">
-                    <Figure.Image
-                        className="rounded-start rounded-bottom p-3"
-                        width={250}
-                        height={300}
-                        alt="me"
-                        src={logo}
-                    />
-                    <Figure.Caption className="text-light fs-2 text-center">
-                        {ResumeValues.full_name}
-                    </Figure.Caption>
-                </Figure>
-                <div className="py-4">
-                    {ResumeValues.accounts.map(item =>
-                        <a href={item.link}><i className={item.icon + " fs-1 mx-3 text-light"}></i></a>
-                    )}
-                </div>
-            </Stack>
-        </Col>
+    const [activeLink, setActiveLink] = useState(1)
+    const navLinks = [
+        {id: 1, link: '#', label: 'Home'},
+        {id: 2, link: '#', label: 'Features'},
+        {id: 3, link: '#', label: 'Pricing'},
+        {id: 4, link: '#', label: 'Faq'},
+        {id: 5, link: '#', label: 'About'},
+    ]
+
+    return (
+        <div className="container">
+            <header className="d-flex justify-content-end py-3">
+                <ul className="nav nav-pills">
+                    {navLinks.map(item => <li className="nav-item" onClick={() => setActiveLink(item.id)}>
+                        <a href={item.link} className={"nav-link " +(activeLink === item.id && 'active')} aria-current="page">{item.label}</a>
+                    </li>)}
+                </ul>
+            </header>
+        </div>
     )
 
 }
