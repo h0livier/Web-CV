@@ -6,20 +6,102 @@
         {
             "name": "github",
             "link": "https://github.com/h0livier",
-            "icon": "fa fa-github"
+            "icon": "fa-brands fa-github"
         },
         {
             "name": "linkedin",
             "link": "https://www.linkedin.com/in/olivier-hayot-614b5a195",
-            "icon": "fa fa-linkedin"
+            "icon": "fa-brands fa-linkedin"
+        }
+    ],
+    "contacts": [
+        {
+            "name": "Olivier Hayot",
+            "value": "Olivier Hayot",
+            "src": "dd",
+            "avatar": "image",
+            "link": "https://media.licdn.com/dms/image/D4E03AQFPb-74k5lvlg/profile-displayphoto-shrink_200_200/0/1664368715946?e=2147483647&v=beta&t=JUmGPfQxAXLYhbQnhoknoxMyekWANIzuxSIbj4tmkNY"
+        },
+        {
+            "name": "Olivier Hayot",
+            "value": "olivier.hayot.dev@gmail.com",
+            "src": "OH",
+            "avatar": "text",
+            "link": ""
         }
     ],
     "title_values": ["Olivier Hayot", "a Software Developer", "a DevOps"],
+    "projects": [
+        {
+            "group": "Powershell MicroORM",
+            "icon":"fa fa-file-code",
+            "description": "Translates ps1 Classes to SQL queries"
+        },
+        {
+            "group": "Weight tracking app",
+            "icon":"fa fa-weight-hanging",
+            "description": "Helps me keep track of my weight loss"
+        },
+        {
+            "group": "Bar application",
+            "icon":"fa fa-mug-hot",
+            "description": "Monitors a bar orders and stock"
+        }
+    ],
     "skills": [
-        {"icon":"fa fa-github", "label": "oui"},
-        {"icon":"fa fa-github", "label": "oui"},
-        {"icon":"fa fa-github", "label": "oui"},
-        {"icon":"fa fa-github", "label": "oui"},
-        {"icon":"fa fa-github", "label": "oui"}
+        {
+            "group": "Software Development",
+            "icon":"fa fa-desktop",
+            "description": "I know how to create a Web or a Desktop application from A to Z, from the design of the database to the creation of the user interfacer."
+        },
+        {
+            "group": "Automatisation",
+            "icon":"fa fa-gear",
+            "description": "Depending on requirements, I can find a method for automating certain low value-added business processes so that you can concentrate on the important tasks."
+        },
+        {
+            "group": "System Administration",
+            "icon":"fa fa-server",
+            "description": "I'm capable of setting up, configuring and making available a server (Windows or Linux) as well as making numerous Web services accessible from the Internet."
+        }
+    ],
+    "interests": ["DevOps", "AI Integration", "Linux", "Docker", "Web application", "PWA", "Cross-Platform App"],
+    "experiences": [
+        {
+            "place": "Wavenet",
+            "short_place": "W",
+            "role": "Analyst Developer",
+            "description": "dddddddddddd",
+            "from": "mar. 2024",
+            "to": "now",
+            "type": "job"
+        },
+        {
+            "place": "Easi",
+            "short_place": "E",
+            "role": "Software Developer",
+            "description": "Développement et maintenance d'outils visant à améliorer et simplifier la gestion du cloud SaaS d'Adfinity. Création d'applications spécifiques web et desktop",
+            "from": "sep. 2022",
+            "to": "mar. 2024",
+            "type": "job"
+        },
+        {
+            "place": "Free University of Brussels",
+            "short_place": "ULB",
+            "role": "Web Developer Intern",
+            "description": "Développements orientés technologies Web, améliorations d'intranet, extranet, bases de données, outils existants concernant la gestion et la valorisation de la Recherche menée au sein de l'Université.",
+            "from": "feb. 2022",
+            "to": "mai 2022",
+            "type": "job"
+        },
+        {
+            "place": "Haute École en Hainaut",
+            "short_place": "HEH",
+            "role": "Student",
+            "description": "Obtention d'un bachelier en Informatique et Systèmes orientation télécommunications et réseaux avec option développement. Mention Satisfaisant",
+            "from": "sep. 2019",
+            "to": "jun. 2022",
+            "type": "school"
+        }
     ]
 }

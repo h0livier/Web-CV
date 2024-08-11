@@ -1,7 +1,12 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
 import Default from '@pages/default'
 import "./styles/main.scss"
+import { ChakraProvider } from '@chakra-ui/react'
 
 export default function App() {
-    return <Default />
+
+    return (
+        <ChakraProvider>
+            <Default />
+        </ChakraProvider>
+    )
 }
