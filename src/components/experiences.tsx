@@ -27,7 +27,7 @@ export default function Experiences() {
 function Experience({experience}: {experience: Experience}){
     return(
         <Stack direction='row' alignItems='center' boxShadow='md' rounded='md' p={3} background='#1b1f25' border='1.5px solid #2a2e34'>
-            <Stack flex={5} gap={0} flexDirection={"row"}>
+            <Stack flex={5} gap={0} flexDirection={{base: "column", md:"row"}}>
                 <Text mr={4} fontSize='sm' color='#bbbfc5' fontWeight='bold'>{experience.place}</Text>
                 <Text fontSize='sm' color='#91959d'>{experience.role}</Text>
             </Stack>

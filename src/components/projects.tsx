@@ -25,7 +25,7 @@ function ProjectItem({project}: {project: Project}){
             <Box rounded="md" minW='35px' minH='35px' display={'flex'} alignItems='center' justifyContent='center' background='#424a56'>
                 <Text as="i" className={project.icon}></Text>
             </Box>
-            <Stack direction='row' alignItems='center' ml={2} flex={5} gap={0}>
+            <Stack direction={{base:'column', md:'row'}} alignItems={{base:'start', md:'center'}} ml={2} flex={5} gap={0}>
                 <Text mr={4} fontSize='sm' color='#bbbfc5' fontWeight='bold'>{project.group}</Text>
                 <Text fontSize='xs' color='#91959d'>{project.description}</Text>
             </Stack>
