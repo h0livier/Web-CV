@@ -6,7 +6,7 @@ export default function CvShower(){
     return(
         <Box>
             <Button>
-                <PDFDownloadLink document={<CvPdf />} fileName="somename.pdf">
+                <PDFDownloadLink document={<CvPdf />} fileName="olivier_hayot_cv.pdf">
                     {({loading}) => (loading ? 'Loading document...' : 'Download my CV now!')}
                 </PDFDownloadLink>
             </Button>

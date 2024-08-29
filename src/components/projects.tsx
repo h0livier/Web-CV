@@ -12,7 +12,7 @@ export function ProjectsStack(){
         <Stack>
             <Text fontSize="lg">Side projects</Text>
             <Stack mt={5}>
-                {projects.map(project => <ProjectItem project={project} />)}
+                {projects.map(project => <ProjectItem key={project.group} project={project} />)}
             </Stack>
         </Stack>
     )

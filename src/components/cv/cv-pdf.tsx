@@ -1,13 +1,14 @@
-import { Page, Text, View, Document, StyleSheet } from '@react-pdf/renderer';
+import { Page, Text, View, Document, StyleSheet, Image } from '@react-pdf/renderer';
 import {experiences, cv_skills,  languages, full_name, accounts, mail, phone} from "@assets/resume.json"
 import { capitalize } from '../../helpers/string.helper';
+import picture from '@assets/picture.jpg' 
 
 export default function CvPdf(){
 
     // Create styles
     const styles = StyleSheet.create({
         header: {
-            backgroundColor: '#008',
+            backgroundColor: '#023e8a',
             paddingHorizontal: '20px',
             paddingVertical: '20px',
             color: 'white',
@@ -64,9 +65,10 @@ export default function CvPdf(){
         },
         section_subtitle: {
             fontSize: 12,
-            fontWeight: 'semibold',
+            fontWeight: 'extrabold',
             fontStyle: 'italic',
-            marginBottom: '2px'
+            marginBottom: '2px',
+            color: '#252525'
         },
         section_value: {
             fontSize: 11,
@@ -82,6 +84,7 @@ export default function CvPdf(){
                 <View style={styles.mainContent}>
                     <View style={styles.firstColumn}>
                         <Text style={styles.title}>Données personnelles</Text>
+                        <Image source={picture} />
                         <View>
                             <Text style={styles.personnal_subtitle}>Nom</Text>
                             <Text style={styles.personnal_value}>{full_name}</Text>
@@ -95,7 +98,7 @@ export default function CvPdf(){
                             <Text style={styles.personnal_value}>{mail}</Text>
                         </View>
                         {accounts.map(item => (
-                            <View>
+                            <View key={item.name}>
                                 <Text style={styles.personnal_subtitle}>{capitalize(item.name)}</Text>
                                 <Text style={styles.personnal_value}>{item.link}</Text>
                             </View>
@@ -104,7 +107,7 @@ export default function CvPdf(){
                     <View style={styles.secondColumn}>
                         <Text style={styles.title}>Expériences</Text>
                         {experiences.filter(item => item.type === 'job').map(item => (
-                            <View>
+                            <View key={item.place}>
                                 <Text style={styles.section_title}>{item.place}</Text>
                                 <Text style={styles.section_subtitle}>de {item.from} à {item.to} - {item.role}</Text>
                                 <Text style={styles.section_value}>{item.description}</Text>
@@ -113,7 +116,7 @@ export default function CvPdf(){
 
                         <Text style={styles.title}>Etudes</Text>
                         {experiences.filter(item => item.type === 'school').map(item => (
-                            <View>
+                            <View key={item.place}>
                                 <Text style={styles.section_title}>{item.place}</Text>
                                 <Text style={styles.section_subtitle}>de {item.from} à {item.to} - {item.role}</Text>
                                 <Text style={styles.section_value}>{item.description}</Text>
@@ -122,7 +125,7 @@ export default function CvPdf(){
 
                         <Text style={styles.title}>Compétences</Text>
                         {cv_skills.map(item => (
-                            <View style={{...styles.flexHorizontal, ...{marginBottom: '3px', marginTop: '8px'}}}>
+                            <View key={item.category} style={{...styles.flexHorizontal, ...{ marginTop: '5px'}}}>
                                 <Text style={styles.section_subtitle}>{item.category}: </Text>
                                 <Text style={styles.section_value}>{item.items.join(', ')}</Text>
                             </View>
@@ -130,7 +133,7 @@ export default function CvPdf(){
 
                         <Text style={styles.title}>Langues</Text>
                         {languages.map(item => (
-                            <View style={{...styles.flexSpaceBetween, ...{marginTop: '8px'}}}>
+                            <View key={item.name} style={{...styles.flexSpaceBetween, ...{marginTop: '5px'}}}>
                                 <Text style={styles.section_subtitle}>{item.name}</Text>
                                 <Text style={styles.section_value}>{item.level}</Text>
                             </View>
