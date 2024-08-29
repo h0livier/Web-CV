@@ -2,6 +2,7 @@
     "full_name": "Olivier Hayot",
     "mail": "olivier.hayot.dev@gmail.com",
     "phone": "+32 471 64 60 15",
+    "driving_license": "Permis B",
     "accounts": [
         {
             "name": "github",
@@ -11,6 +12,11 @@
         {
             "name": "linkedin",
             "link": "https://www.linkedin.com/in/olivier-hayot-614b5a195",
+            "icon": "fa-brands fa-linkedin"
+        },
+        {
+            "name": "Site Web",
+            "link": "https://olivier.hayot.cloud",
             "icon": "fa-brands fa-linkedin"
         }
     ],
@@ -70,10 +76,10 @@
         {
             "place": "Wavenet",
             "short_place": "W",
-            "role": "Analyst Developer",
-            "description": "dddddddddddd",
+            "role": "Analyste Dévelopeur",
+            "description": "Développement et maintenance d'applications Web.",
             "from": "mar. 2024",
-            "to": "now",
+            "to": "aujourd'hui",
             "type": "job"
         },
         {
@@ -86,11 +92,11 @@
             "type": "job"
         },
         {
-            "place": "Free University of Brussels",
+            "place": "Université libre de Bruxelles",
             "short_place": "ULB",
             "role": "Web Developer Intern",
             "description": "Développements orientés technologies Web, améliorations d'intranet, extranet, bases de données, outils existants concernant la gestion et la valorisation de la Recherche menée au sein de l'Université.",
-            "from": "feb. 2022",
+            "from": "fév. 2022",
             "to": "mai 2022",
             "type": "job"
         },
@@ -103,5 +109,40 @@
             "to": "jun. 2022",
             "type": "school"
         }
-    ]
+    ],
+    "cv_skills": [
+        {
+            "category": "Web Back-end",
+            "items": [".Net Core", "C#", "Node.js", "Typescript", "Laravel", "PHP"]
+        },
+        {
+            "category": "Web Front-end",
+            "items": ["HTML5", "CSS3", "Sass", "React.js", "Next.js", "Typescript"]
+        },
+        {
+            "category": "Scripting",
+            "items": ["Powershell", "bash"]
+        },
+        {
+            "category": "Base de données",
+            "items": ["MySQL", "PostgreSQL", "SQL Server", "Cosmos DB"]
+        },
+        {
+            "category": "Systèmes d'exploitation",
+            "items": ["Windows Serveur", "Linux"]
+        },
+        {
+            "category": "Outils",
+            "items": ["Git", "Docker", "Terraform"]
+        },
+        {
+            "category": "Testing",
+            "items": ["NUnit", "Selenium", "Pester", "ChaiJS", "PHPUnit"]
+        }
+    ],
+    "languages": [
+        {"name": "Français", "level": "C2"},
+        {"name": "Anglais", "level": "B2"}
+    ],
+    "cv_profile": "blablabla"
 }
